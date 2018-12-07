@@ -1,0 +1,53 @@
+1. 
+
+A: String
+B: Integer
+C: Date
+D: Float
+E: Float
+
+2. It seems like a database should be used when there's lots of data that needs to be stored permanently. A text file should be used when it's a smaller amount of data or the data is only needed for the single procedure. 
+
+3. SQL is declarative rather than procedural. This means that we can focus on what we want to find out, rather than how the database should find it. 
+
+4. The pieces of a database system fit together in a table, made up of columns and rows. Inside each block is a value that is stored in the database and can be pulled with a command. Databases store data in a binary file format. 
+
+5. 
+
+Table: The format a database is stored in
+Row: The horizontal part of the table; represent individual data corresponding with the column
+Column: In a database, these label what is stored there.
+Value: The actual data stored in the cell.
+
+6. String, Integer, Object
+
+7. 
+
+Query 1: What is the date and amount from payments?
+Result: ('2016-05-01', 1500.00), ('2015-05-10', 37.00), ('2016-05-15', 124.93), ('2016-05-23', 54.72)
+
+Query 2: What is the amount from payments when the amount is less than 500?
+Result: 37.00, 124.93, 54.72
+
+Query 3: What is all the data from payments when the payee is Mega Foods?
+Result: ('2016-05-15', 'Mega Foods', 124.93, 'Groceries')
+
+8. 
+
+SELECT email, signup
+FROM users
+WHERE name = 'DeAndre Data'
+
+Output: 'datad@comcast.net', '2008-01-20'
+
+SELECT userid
+FROM user
+WHERE email = 'alesia.algorithm@uw.edu'
+
+Output: 1
+
+SELECT *
+FROM users
+WHERE userid = 4
+
+Output: (4, 'Brandy Boolean', 'bboolean@nasa.gov', '1995-10-15')
